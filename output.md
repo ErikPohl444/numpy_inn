@@ -1,5 +1,5 @@
 > [!NOTE]
->     logger.info("demoing setsy class")
+>     logger.info("demoing setsy class")</br>
 >     logger.info("set up a setsy named first_setsy containing 3 elements")
 
 > [!NOTE]
