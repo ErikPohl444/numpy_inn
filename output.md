@@ -1,5 +1,5 @@
 > [!NOTE]
->     logger.info("demoing setsy class")</br>>     logger.info("set up a setsy named first_setsy containing 3 elements")</br>> [!NOTE]
+>     logger.info("demoing setsy class")</br>    logger.info("set up a setsy named first_setsy containing 3 elements")</br>> [!NOTE]
 >     logger.info("output the powerset of the first_setsy")</br>```python
     first_setsy = setsy([6, 7, 8])
     print('here', list(first_setsy.powerset()))
@@ -40,7 +40,7 @@ False
 ```
 {((1, 2), 2), ((1, 2), 5), (8, 6), ((1, 3), 1), (6, 2), (7, 1), (6, 5), ((1, 2), 1), (8, 2), (8, 5), (6, 1), ((1, 3), 6), (7, 6), (8, 1), ((1, 2), 6), ((1, 3), 2), ((1, 3), 5), (7, 2), (6, 6), (7, 5)}
 > [!NOTE]
->     logger.info("NOW DO A REVIEW OF IS NOT SUBSET")</br>>     logger.info("and a fourth setsy")</br>> [!NOTE]
+>     logger.info("NOW DO A REVIEW OF IS NOT SUBSET")</br>    logger.info("and a fourth setsy")</br>> [!NOTE]
 >     logger.info("let's get its contents")</br>```python
     fourth_setsy = setsy([1, 2, 3])
     print("a:", fourth_setsy)
