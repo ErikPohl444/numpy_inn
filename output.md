@@ -1,14 +1,10 @@
 > [!NOTE]
 >     logger.info("demoing setsy class")
-> [!NOTE]
 >     logger.info("set up a setsy named first_setsy containing 3 elements")
 > [!NOTE]
 >     logger.info("output the powerset of the first_setsy")
 ```python
-    logger.info("demoing setsy class")
-    logger.info("set up a setsy named first_setsy containing 3 elements")
     first_setsy = setsy([6, 7, 8])
-    logger.info("output the powerset of the first_setsy")
     print('here', list(first_setsy.powerset()))
 ```
 here [(6,), (8, 7), (8,), (6, 7), (7,), (8, 6), (8, 6, 7), ()]
@@ -17,9 +13,7 @@ here [(6,), (8, 7), (8,), (6, 7), (7,), (8, 6), (8, 6, 7), ()]
 > [!NOTE]
 >     logger.info("is second_setsy a superset or subset of first_setsy?  we expect not.")
 ```python
-    logger.info("set up a setsy named second_setsy containing 2 elements, each a set of 2 elements")
     second_setsy = setsy([(1, 2), (1, 3)])
-    logger.info("is second_setsy a superset or subset of first_setsy?  we expect not.")
     print(second_setsy.issubset(first_setsy))
 ```
 False
@@ -32,23 +26,19 @@ False
 > [!NOTE]
 >     logger.info("what do we get? hint: a setsy containing 2 sets of 2 elements each plus the 3 elements of first_setsy")
 ```python
-    logger.info("now union second setsy with first_setsy")
     second_setsy = second_setsy.union(first_setsy)  # class setsy which inherits from set returns a set from union
-    logger.info("what do we get? hint: a setsy containing 2 sets of 2 elements each plus the 3 elements of first_setsy")
     print(second_setsy)
 ```
 {(1, 2), 6, 7, 8, (1, 3)}
 > [!NOTE]
 >     logger.info("still a setsy.")
 ```python
-    logger.info("still a setsy.")
     print(type(second_setsy))
 ```
 <class 'setsy.setsy'>
 > [!NOTE]
 >     logger.info("let's set up a third setsy called third_setsy")
 ```python
-    logger.info("let's set up a third setsy called third_setsy")
     third_setsy = {6, 5, 2, 1}
     print('------------')
 ```
@@ -56,21 +46,16 @@ False
 > [!NOTE]
 >     logger.info("what is the cartesian set of second_setsy and third_setsy?")
 ```python
-    logger.info("what is the cartesian set of second_setsy and third_setsy?")
     print(second_setsy.cartesian(third_setsy))
 ```
 {((1, 2), 2), ((1, 2), 5), (8, 6), ((1, 3), 1), (6, 2), (7, 1), (6, 5), ((1, 2), 1), (8, 2), (8, 5), (6, 1), ((1, 3), 6), (7, 6), (8, 1), ((1, 2), 6), ((1, 3), 2), ((1, 3), 5), (7, 2), (6, 6), (7, 5)}
 > [!NOTE]
 >     logger.info("NOW DO A REVIEW OF IS NOT SUBSET")
-> [!NOTE]
 >     logger.info("and a fourth setsy")
 > [!NOTE]
 >     logger.info("let's get its contents")
 ```python
-    logger.info("NOW DO A REVIEW OF IS NOT SUBSET")
-    logger.info("and a fourth setsy")
     fourth_setsy = setsy([1, 2, 3])
-    logger.info("let's get its contents")
     print("a:", fourth_setsy)
 ```
 a: {1, 2, 3}
@@ -79,9 +64,7 @@ a: {1, 2, 3}
 > [!NOTE]
 >     logger.info("confirm its contents")
 ```python
-    logger.info("redefine first_setsy to be more complicated")
     first_setsy = setsy([2, 3, 4, 5, 6, 7])
-    logger.info("confirm its contents")
     print("b:", first_setsy)
 ```
 b: {2, 3, 4, 5, 6, 7}
@@ -90,9 +73,7 @@ b: {2, 3, 4, 5, 6, 7}
 > [!NOTE]
 >     logger.info("and look: it knows why")
 ```python
-    logger.info("is fourth_setsy a subset of first_setsy?")
     c = fourth_setsy.is_not_subset(first_setsy)
-    logger.info("and look: it knows why")
     print("result of a.is_not_subset(b): ", c)
 ```
 result of a.is_not_subset(b):  {1}
